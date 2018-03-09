@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="converter.ConverterController">
+   <center>
+      <HBox prefHeight="47.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textField1" onAction="#handleConvert">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <ComboBox fx:id="comboBox1" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Label text="=">
+               <HBox.margin>
+                  <Insets right="10.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="textField2" onAction="#handleConvert">
+               <HBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <ComboBox fx:id="comboBox2" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </HBox.margin>
+            </ComboBox>
+            <Button fx:id="convert" mnemonicParsing="false" onAction="#handleConvert" prefHeight="27.0" prefWidth="85.0" text="Convert" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#handleClear" prefHeight="15.0" prefWidth="62.0" text="Clear" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
